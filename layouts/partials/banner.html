@@ -1,0 +1,13 @@
+				<!-- Banner -->
+                <section class="banner style1 orient-left content-align-left image-position-right {{ with .Site.Data.homepage.banner.fullscreen }} fullscreen {{ end }}}} onload-image-fade-in onload-content-fade-right">
+                    <div class="content">
+                        {{ with .Site.Title }}<h1>{{.}}</h1>{{end}}
+                        <p>{{ .Site.Data.homepage.banner.description | markdownify}}</p>
+                        <ul class="actions stacked">
+                            <li><a href="#first" class="button large wide smooth-scroll-middle">Get Started</a></li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        {{ with .Site.Data.homepage.banner.image }}<img src="{{.}}" alt="Full of Mango" />{{end}}
+                    </div>
+                </section>
